@@ -1,0 +1,19 @@
+@import '../../styles/vars.scss';
+
+.nav-bar {
+  width: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    color: var(--color-white);
+    padding: 15px 30px;
+    font-weight: bold;
+
+    &:hover {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0 0);
+      cursor: pointer;
+    }
+  }
+}

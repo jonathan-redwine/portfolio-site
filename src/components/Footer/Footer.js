@@ -26,6 +26,7 @@ class Footer extends Component {
             </a>
           </div>
         </div>
+        <div className="footer__copyright">© 2024 Jonathan Redwine. All rights reserved.</div>
       </div>
     );
   }

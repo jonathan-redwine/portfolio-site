@@ -8,7 +8,13 @@ class Projects extends Component {
       <div className="projects">
         <div className="projects__summary">
           <div className="projects__summary-title">Projects</div>
-          <div className="projects__summary-description">Some of the projects I've recently worked on</div>
+          <div className="projects__summary-description">
+            Some of the projects I've recently worked on. To see more, check out my{' '}
+            <a href="https://github.com/redwine168" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            .
+          </div>
         </div>
         <div className="projects__list">
           {/* Free Lunch */}

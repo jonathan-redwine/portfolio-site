@@ -7,15 +7,17 @@ class Projects extends Component {
     return (
       <div className="projects">
         <div className="projects__summary">
-          <div>Here are some of my recent projects!</div>
+          <div className="projects__summary-title">Projects</div>
+          <div className="projects__summary-description">Some of the projects I've recently worked on</div>
         </div>
         <div className="projects__list">
+          {/* Free Lunch */}
           <div className="projects__list-item">
-            <div className="projects__list-item__image-container">
+            <div className="projects__list-item__title">
               <img src={FreeLunchLogo} alt="Free Lunch Fantasy Sports" />
+              <div className="projects__list-item__title-name">Fantasy Football League and Trade Simulator</div>
             </div>
             <div className="projects__list-item__info">
-              <div className="projects__list-item__info-title">Fantasy Football League and Trade Simulator</div>
               <div className="projects__list-item__info-description">
                 This fantasy football simulation tool allows users to import their fantasy football leagues and simulate
                 the rest of the season. The tool takes into account the league's settings, rosters, and matchups to

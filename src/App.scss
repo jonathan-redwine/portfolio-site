@@ -6,6 +6,11 @@
 
 a {
   color: var(--color-teal);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
   &:visited {
     color: var(--color-teal);
   }

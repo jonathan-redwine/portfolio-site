@@ -1,6 +1,6 @@
 # Jonathan H. Redwine
 
-This project is the personal website for Jonathan Redwine.
+This project is the personal website for Jonathan Redwine. It is built with React.
 
 If you would like to contact me, please reach out on one of the following:
 

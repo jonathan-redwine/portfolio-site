@@ -8,75 +8,147 @@
   align-items: center;
 
   &__main {
-    width: 75%;
-    padding: 100px 60px;
-    display: flex;
+    @media (min-width: 100px) {
+      width: 100%;
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 500px) {
+      width: 75%;
+      padding: 100px 60px;
+      display: flex;
+    }
 
     &__pic-container {
-      width: 40%;
-      min-height: 100%;
-      display: flex;
-      justify-content: flex-end;
-      &__pic {
-        max-width: 300px;
-        max-height: 600px;
-        border-radius: 10px;
-        border: 2px solid var(--color-gray);
+      @media (min-width: 100px) {
+        width: 80%;
+        &__pic {
+          max-width: 250px;
+          max-height: 500px;
+          border-radius: 10px;
+          border: 2px solid var(--color-gray);
+        }
+      }
+
+      @media (min-width: 500px) {
+        width: 40%;
+        min-height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        &__pic {
+          max-width: 300px;
+          max-height: 600px;
+          border-radius: 10px;
+          border: 2px solid var(--color-gray);
+        }
       }
     }
 
     &__info {
-      width: 60%;
-      min-height: 100%;
-      padding: 20px;
-      margin-left: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
+      @media (min-width: 100px) {
+        width: 90%;
 
-      &-about {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        &-about {
+          display: flex;
+          flex-direction: column;
 
-        &-name {
-          font-size: 32pt;
+          &-name {
+            font-size: 24pt;
+          }
+
+          &-tagline {
+            font-size: 14pt;
+          }
+
+          &-description {
+            font-size: 12pt;
+            margin-top: 20px;
+          }
+
+          .about-item {
+            margin-top: 5px;
+          }
         }
 
-        &-tagline {
-          font-size: 14pt;
-        }
+        &-contact {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
 
-        &-description {
-          font-size: 12pt;
-          margin-top: 40px;
-          text-align: start;
-        }
+          &-btn {
+            font-family: sans-serif;
+            background-color: var(--color-teal);
+            color: var(--color-white);
+            padding: 20px 40px;
+            font-size: 18pt;
+            border: 2px solid var(--color-gray);
+            border-radius: 5px;
 
-        .about-item {
-          margin-top: 5px;
+            &:hover {
+              cursor: pointer;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+            }
+          }
         }
       }
 
-      &-contact {
-        margin-top: 20px;
-        height: 100%;
+      @media (min-width: 500px) {
+        width: 60%;
+        min-height: 100%;
+        padding: 20px;
+        margin-left: 50px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
 
-        &-btn {
-          font-family: sans-serif;
-          background-color: var(--color-teal);
-          color: var(--color-white);
-          padding: 20px 40px;
-          font-size: 18pt;
-          border: 2px solid var(--color-gray);
-          border-radius: 5px;
+        &-about {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
 
-          &:hover {
-            cursor: pointer;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+          &-name {
+            font-size: 32pt;
+          }
+
+          &-tagline {
+            font-size: 14pt;
+          }
+
+          &-description {
+            font-size: 12pt;
+            margin-top: 40px;
+            text-align: start;
+          }
+
+          .about-item {
+            margin-top: 5px;
+          }
+        }
+
+        &-contact {
+          margin-top: 20px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          &-btn {
+            font-family: sans-serif;
+            background-color: var(--color-teal);
+            color: var(--color-white);
+            padding: 20px 40px;
+            font-size: 18pt;
+            border: 2px solid var(--color-gray);
+            border-radius: 5px;
+
+            &:hover {
+              cursor: pointer;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+            }
           }
         }
       }
